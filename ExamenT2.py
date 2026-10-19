@@ -80,13 +80,13 @@ lab = [
 ]
 
 res = [[0 for _ in range(9)] for _ in range(9)]
+filas = len(lab)
 
 print()
 print("Laberinto original:")
 print()
 imprime(lab)
 
-filas = len(lab)
 if laberB(lab, res, filas - 1, 0, 0):
     print("¡El ratón logró salir del laberinto! Camino:")
     imprime(res)
